@@ -1,1 +1,10 @@
 ﻿ds_text;ds_reason;ds_notpriced;macro_ds_notpriced
+app_filter:Qsa nok penumper 7555666; Docto nok; QSA nok; Docto nok
+app_filter:Api nok penumper 1234567; Docto nok; API nok; Docto nok
+spread not registered penumper 1593578; spread not registered; spread not registered; spread not registered
+counterparty not registered penumper 1559357; client not registered; client not registered; client not registered
+app_filter:Suitability nok penumper 8799453;;;
+app_filter:Qsa nok penumper 9636852; Docto nok;QSA nok; Docto nok
+spread not registered penumper 5644423;spread not registered; spread not registered; spread not registered
+spread not registered penumper 7451965;;;
+app_filter:Suitability nok penumper 8889996;Docto nok; Suitability nok; Docto nok
