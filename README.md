@@ -45,7 +45,7 @@ import pandas as pd
 df = pd.read_csv("data/sample.csv", sep=";", encoding="utf-8-sig", skipinitialspace=True)
 ```
 
-`encoding="utf-8-sig"` remove o BOM do nome da primeira coluna, e `skipinitialspace=True` remove o espaço que alguns valores têm depois do `;`.
+`skipinitialspace=True` remove o espaço que alguns valores têm depois do `;`. Sem ele, rótulos como ` QSA nok` e `QSA nok` viram classes diferentes. O pandas já descarta o BOM sozinho; `encoding="utf-8-sig"` só faz diferença ao ler o arquivo com outras ferramentas, como o módulo `csv` do Python.
 
 ## Ambiente
 

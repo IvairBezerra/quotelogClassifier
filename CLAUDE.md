@@ -26,7 +26,7 @@ Load it with:
 pd.read_csv("data/sample.csv", sep=";", encoding="utf-8-sig", skipinitialspace=True)
 ```
 
-Without `utf-8-sig`, the first column name becomes `﻿ds_text`. Without `skipinitialspace`, labels keep leading spaces and split into duplicate classes.
+pandas strips the BOM by itself even with `encoding="utf-8"`. Python's `csv` module and other readers don't, so use `utf-8-sig` with those. Without `skipinitialspace` (or `.str.strip()` on the label columns), labels keep leading spaces and split into duplicate classes.
 
 Columns:
 - `ds_text`: the raw log message, which is the model input. Examples: `app_filter:Qsa nok penumper 7555666`, `spread not registered penumper 1593578`, `counterparty not registered penumper 1559357`.
